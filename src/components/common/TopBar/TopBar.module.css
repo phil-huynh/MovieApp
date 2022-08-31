@@ -1,0 +1,30 @@
+.topBar {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: var(--topbar-height);
+  padding: 0.5rem;
+}
+
+.topBar h1 {
+  color: #000;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: var(--topbar-height);
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
