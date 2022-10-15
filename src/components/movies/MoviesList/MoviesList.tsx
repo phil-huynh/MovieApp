@@ -12,7 +12,7 @@ export const MoviesList: React.FC = () => {
       {trendingMovies?.map((movie: TrendingMovie) => (
         <div className={styles.movie} key={movie.id} aria-label={movie.title}>
           <img
-            alt="movie.title"
+            alt={movie.title}
             src={`https://image.tmdb.org/t/p/w400/${movie.poster_path}`}
             title="movie.title"
           />
