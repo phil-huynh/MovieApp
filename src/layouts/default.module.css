@@ -13,4 +13,5 @@
 
 .mainWrapper {
   overflow: auto;
+  height: 100%;
 }

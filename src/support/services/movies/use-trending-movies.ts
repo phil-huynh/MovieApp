@@ -9,6 +9,6 @@ export const useGetTrendingMovies = (
     method: "GET",
     url: `/trending/${mediaType}/${timeWindow}`,
   });
-
+  console.log("from api call", response)
   return { trendingMovies: response?.results, loading, error };
 };
