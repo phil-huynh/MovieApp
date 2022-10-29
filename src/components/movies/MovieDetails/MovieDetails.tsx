@@ -4,7 +4,9 @@ import { Language, useGetMovieDetails } from "~/support/services/movies";
 import { useSelectionContext } from "~/context/SelectionContext";
 import { Link } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
-import { generateKeySync } from "crypto";
+import { DynamicStar } from 'react-dynamic-star';
+
+
 
 
 export const MovieDetails: React.FC = () => {
@@ -56,12 +58,23 @@ export const MovieDetails: React.FC = () => {
           <div className={styles.genreRow}>
            {movie.genres.map((genre, index) =>
              index != 0 ?
-             <span className={styles.genre}>{`, ${genre.name}`}</span>
+             <span className={styles.genre}>{`, ${genre.name.toUpperCase()}`}</span>
              :
-             <span className={styles.genre}>{`${genre.name}`}</span>
+             <span className={styles.genre}>{`${genre.name.toUpperCase()}`}</span>
            )}
-           <span className={styles.divider}>|</span>
-           <span>{`${movie.vote_average} (${movie.vote_count})`}</span>
+            <span className={styles.divider}>|</span>
+
+            <DynamicStar
+              rating={movie.vote_average}
+              totalStars={10}
+              emptyStarColor={"#BFBFBF"}
+              height={20}
+              width={20}
+              className={styles.stars}
+              />
+
+
+           <span className={styles.rating}>{`${movie.vote_average.toFixed(1)}/10 (${movie.vote_count})`}</span>
           </div>
           <h3>Overview</h3>
           <p>{movie.overview}</p>

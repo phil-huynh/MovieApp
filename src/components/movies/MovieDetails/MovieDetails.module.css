@@ -4,7 +4,7 @@
 
 .detailPage {
   display: grid;
-  grid-template-columns: 47% 53%;
+  grid-template-columns: 46% 54%;
   height: 100%;
 }
 
@@ -55,12 +55,17 @@
 
 .genre {
   color: #50CC98;
+  font-size: .8rem;
 }
 
 .divider {
   margin-inline: .7rem;
   font-size: 1.5rem;
   color: #BFBFBF;
+}
+
+.rating {
+  margin-left: 1rem;
 }
 
 .infoRow {
