@@ -10,8 +10,6 @@
   margin-top: 50px;
   flex-direction: column;
   width: 100%;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .menu > li {
@@ -38,7 +36,6 @@
 
 .menuToggle {
   display: none;
-  /* display: block; */
 }
 
 .menuButton {

@@ -5,14 +5,10 @@ import { TrendingMovie, useGetTrendingMovies } from "~/support/services/movies";
 import { useSelectionContext } from "~/context/SelectionContext";
 
 
-
 export const MoviesList: React.FC = () => {
 
   const { trendingMovies }  = useGetTrendingMovies();
-  const { id, setId } = useSelectionContext();
-
-
-  console.log(trendingMovies)
+  const { setId } = useSelectionContext();
 
   return (
     <div className={styles.moviesList}>

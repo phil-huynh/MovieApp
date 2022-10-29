@@ -32,7 +32,6 @@
   height: 107%;
 }
 
-
 .movieInfo {
   margin-top: 5%;
   margin-right: 9%;
@@ -55,7 +54,7 @@
 
 .genre {
   color: #50CC98;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .divider {

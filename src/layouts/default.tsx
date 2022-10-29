@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import { TopBar } from "../components/common/TopBar";
-import { NavigationMenu } from "../components/common/NavigationMenu";
+import { TopBar } from "~/components/common/TopBar";
+import { NavigationMenu } from "~/components/common/NavigationMenu";
 import styles from "./default.module.css";
 
 function Layout() {

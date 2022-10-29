@@ -33,8 +33,7 @@ export const useAxios = (axiosParams: AxiosRequestConfig) => {
 
   useEffect(() => {
     fetchData(axiosParams);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // execute once only
+  }, []);
 
   return { response, error, loading };
 };

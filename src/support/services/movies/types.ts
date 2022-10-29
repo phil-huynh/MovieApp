@@ -33,7 +33,7 @@ export interface AxiosMovies {
 
 export interface CurrentMovie {
   id: number;
-  setId:(id: number) => void
+  setId:(id: number) => void;
 }
 
 export interface Genre {
