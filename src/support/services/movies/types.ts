@@ -31,6 +31,7 @@ export interface AxiosMovies {
   error: AxiosError | undefined;
 }
 
+
 export interface CurrentMovie {
   id: number;
   setId:(id: number) => void;

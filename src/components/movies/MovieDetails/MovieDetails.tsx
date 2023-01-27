@@ -10,7 +10,7 @@ export const MovieDetails: React.FC = () => {
 
   const { movie }  = useGetMovieDetails();
   const months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"]
-
+  console.log("Here is the movie's JSON", movie)
   return (
     <div className={styles.outerContainer}>
       {movie ?

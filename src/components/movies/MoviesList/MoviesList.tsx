@@ -9,12 +9,12 @@ export const MoviesList: React.FC = () => {
 
   const { trendingMovies }  = useGetTrendingMovies();
   const { setId } = useSelectionContext();
-
+  console.log(trendingMovies)
   return (
     <div className={styles.moviesList}>
       {trendingMovies?.map((movie: TrendingMovie) => (
         <Link to="/details" key={movie.id}>
-          <div className={styles.movie} aria-label={movie.title} onClick={()=>setId(movie.id)}>
+          <div className={styles.movie} aria-label={movie.title}      onClick={()=>setId(movie.id)}>
             <img
               alt={movie.title}
               src={`https://image.tmdb.org/t/p/w400/${movie.poster_path}`}
