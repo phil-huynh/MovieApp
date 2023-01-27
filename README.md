@@ -1,5 +1,3 @@
-# take-home-react
-
 ## Build Setup
 
 ```bash

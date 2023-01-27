@@ -9,7 +9,8 @@ axios.interceptors.request.use((config: AxiosRequestConfig) => {
   }
 
   config.headers.Authorization =
-    "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZWY5OGEwMzkzYzkzNzQzOTY2OGEwMzRkNmE0Nzg0NyIsInN1YiI6IjYyZjVlZDIxYzNiZmZlMDA4Nzc2YWMxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nTUOKf816xCF3--SDrkvVqLf8i6_2hIgeSAC44vAR0M";
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwN2UzMzVjOTk2Y2FiMmMxOTUxYjMzZjVlM2Q5MDI2NyIsInN1YiI6IjYzZDM0OWNkNWEwN2Y1MDA4MmYzZDg3NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.16bXpOGSqDHBtTOmMpNOY3fh0DXPFxghJkvzwQdv4RQ";
+
   config.headers.Accept = "application/json";
 
   return config;
@@ -37,3 +38,5 @@ export const useAxios = (axiosParams: AxiosRequestConfig) => {
 
   return { response, error, loading };
 };
+
+// "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZWY5OGEwMzkzYzkzNzQzOTY2OGEwMzRkNmE0Nzg0NyIsInN1YiI6IjYyZjVlZDIxYzNiZmZlMDA4Nzc2YWMxMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nTUOKf816xCF3--SDrkvVqLf8i6_2hIgeSAC44vAR0M";
