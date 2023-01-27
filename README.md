@@ -1,3 +1,7 @@
+
+<img src="readmeAssets/Screen Shot 2023-01-27 at 12.53.05 PM.png" width=200 />
+
+
 ## Build Setup
 
 ```bash
