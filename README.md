@@ -1,5 +1,6 @@
 
-<img src="readmeAssets/Screen Shot 2023-01-27 at 12.53.05 PM.png" width=200 />
+<img src="readmeAssets/Screen Shot 2023-01-27 at 12.53.05 PM.png" width=500 />
+<img src="readmeAssets/Screen Shot 2023-01-27 at 12.53.36 PM.png" width=500 />
 
 
 ## Build Setup
